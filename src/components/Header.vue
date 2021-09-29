@@ -1,21 +1,19 @@
 <template>
   <header>
-    <div class="container flex-ori">
+    <nav class="container flex-ori">
       <img class="logo" src="@/assets/img/dc-logo.png" alt="Logo DC">
-      <nav>
-        <ul>
-          <li v-for="(link, index) in navMenu"
-          :key="index"
-          :class="{current : navMenu[index].current}"
-          @click="setCurrent(index)"
-          >
-            <a :href="navMenu[index].url">
-              {{navMenu[index].title}}
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+      <ul>
+        <li v-for="(link, index) in navMenu"
+        :key="index"
+        :class="{current : navMenu[index].current}"
+        @click="setCurrent(index)"
+        >
+          <a :href="navMenu[index].url">
+            {{navMenu[index].title}}
+          </a>
+        </li>
+      </ul>
+    </nav>
   </header>
 </template>
 
