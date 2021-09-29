@@ -1,0 +1,13 @@
+@import '@/assets/style/variables.scss';
+// Reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    height: 5rem;
+    width: 100%;
+    background-color: $c-main;
+}
