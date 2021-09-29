@@ -4,8 +4,9 @@
     <Header/>
 
     <main>
-
+      <p style="color: white">--> Content Goes Here</p>
     </main>
+    <dcIndexBar/>
 
     <Footer/>
 
@@ -15,12 +16,14 @@
 <script>
 import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
+import dcIndexBar from './components/main/dcIndexBar.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
-    Footer
+    Footer,
+    dcIndexBar
   }
 }
 </script>

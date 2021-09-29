@@ -90,7 +90,7 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+<!-- Style SCSS -->
 <style scoped lang="scss">
   @import '@/assets/style/style.scss';
 
