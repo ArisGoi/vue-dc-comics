@@ -4,7 +4,15 @@
       <img class="logo" src="@/assets/img/dc-logo.png" alt="Logo DC">
       <nav>
         <ul>
-          <li v-for="(link, index) in navMenu" :key="index" :class="{current : navMenu[index].current}"><a :href="navMenu[index].url">{{navMenu[index].title}}</a></li>
+          <li v-for="(link, index) in navMenu"
+          :key="index"
+          :class="{current : navMenu[index].current}"
+          @click="setCurrent(index)"
+          >
+            <a :href="navMenu[index].url">
+              {{navMenu[index].title}}
+            </a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -69,6 +77,14 @@ export default {
           current: false
         }
       ]
+    }
+  },
+  methods: {
+    setCurrent(index) {
+      for(let i=0; i < this.navMenu.length; i++){
+        this.navMenu[i].current = false;
+      }
+      this.navMenu[index].current = true;
     }
   }
 }
