@@ -1,4 +1,8 @@
 @import '@/assets/style/variables.scss';
+
+// Google Fonts (400 / 700)
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+
 // Reset
 * {
     margin: 0;
@@ -6,8 +10,17 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
 main{
     height: 5rem;
     width: 100%;
     background-color: $c-main;
+}
+
+.container{
+    max-width: $container-width;
+    margin: auto;
 }
