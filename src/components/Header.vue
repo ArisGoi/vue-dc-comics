@@ -4,16 +4,7 @@
       <img class="logo" src="@/assets/img/dc-logo.png" alt="Logo DC">
       <nav>
         <ul>
-          <li><a href="#">Characters</a></li>
-          <li><a href="#">Comics</a></li>
-          <li><a href="#">Movies</a></li>
-          <li><a href="#">TV</a></li>
-          <li class="current"><a href="#">Games</a></li>
-          <li><a href="#">Collectibles</a></li>
-          <li><a href="#">Videos</a></li>
-          <li><a href="#">Fans</a></li>
-          <li><a href="#">News</a></li>
-          <li><a href="#">Shop</a></li>
+          <li v-for="(link, index) in navMenu" :key="index" :class="{current : navMenu[index].current}"><a :href="navMenu[index].url">{{navMenu[index].title}}</a></li>
         </ul>
       </nav>
     </div>
@@ -23,6 +14,63 @@
 <script>
 export default {
   name: 'Header',
+
+  data() {
+    return {
+      navMenu: [
+        {
+          title: "Characters",
+          url: '#',
+          current: false
+        },
+        {
+          title: "Comics",
+          url: '#',
+          current: true
+        },
+        {
+          title: "Movies",
+          url: '#',
+          current: false
+        },
+        {
+          title: "TV",
+          url: '#',
+          current: false
+        },
+        {
+          title: "Games",
+          url: '#',
+          current: false
+        },
+        {
+          title: "Characters",
+          url: '#',
+          current: false
+        },
+        {
+          title: "Videos",
+          url: '#',
+          current: false
+        },
+        {
+          title: "Fans",
+          url: '#',
+          current: false
+        },
+        {
+          title: "News",
+          url: '#',
+          current: false
+        },
+        {
+          title: "Shop",
+          url: '#',
+          current: false
+        }
+      ]
+    }
+  }
 }
 </script>
 
