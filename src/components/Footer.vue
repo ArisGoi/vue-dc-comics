@@ -1,7 +1,7 @@
 <template>
   <footer>
     <section class="footer-top">
-      <img src="@/assets/img/dc-logo-bg.png" alt="">
+      <img src="../assets/img/dc-logo-bg.png" alt="">
       <div class="container">
         TEXT
       </div>
@@ -11,11 +11,11 @@
         <button class="btn type-1">Sign-Up Now!</button>
         <ul>
           <li>Follow Us</li>
-          <li><a href="#"><img src="@/assets/img/footer-facebook.png" alt=""></a></li>
-          <li><a href="#"><img src="@/assets/img/footer-twitter.png" alt=""></a></li>
-          <li><a href="#"><img src="@/assets/img/footer-youtube.png" alt=""></a></li>
-          <li><a href="#"><img src="@/assets/img/footer-pinterest.png" alt=""></a></li>
-          <li><a href="#"><img src="@/assets/img/footer-periscope.png" alt=""></a></li>
+          <li><a href="#"><img src="../assets/img/footer-facebook.png" alt=""></a></li>
+          <li><a href="#"><img src="../assets/img/footer-twitter.png" alt=""></a></li>
+          <li><a href="#"><img src="../assets/img/footer-youtube.png" alt=""></a></li>
+          <li><a href="#"><img src="../assets/img/footer-pinterest.png" alt=""></a></li>
+          <li><a href="#"><img src="../assets/img/footer-periscope.png" alt=""></a></li>
         </ul>
       </div>
     </section>
@@ -30,7 +30,7 @@ export default {
 
 <!-- Style SCSS -->
 <style scoped lang="scss">
-@import '@/assets/style/style.scss';
+@import '../assets/style/style.scss';
 
   .footer-top{
     height: 370px;

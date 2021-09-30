@@ -1,7 +1,7 @@
 <template>
   <header>
     <nav class="container flex-ori">
-      <img class="logo" src="@/assets/img/dc-logo.png" alt="Logo DC">
+      <img class="logo" src="../assets/img/dc-logo.png" alt="Logo DC">
       <ul>
         <li v-for="(link, index) in navMenu"
         :key="index"
@@ -90,7 +90,7 @@ export default {
 
 <!-- Style SCSS -->
 <style scoped lang="scss">
-  @import '@/assets/style/style.scss';
+  @import '../assets/style/style.scss';
 
   header{
     position: fixed;

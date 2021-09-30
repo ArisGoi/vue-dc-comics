@@ -10,7 +10,7 @@ export default {
 
 <!-- Style SCSS -->
 <style scoped lang="scss">
-@import '@/assets/style/style.scss';
+@import '../assets/style/style.scss';
 
   #hero{
       height: $heroHeight;
