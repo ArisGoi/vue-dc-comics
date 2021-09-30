@@ -3,6 +3,8 @@
 
     <Header/>
 
+    <Hero/>
+
     <main>
       <p style="color: white">--> Content Goes Here</p>
     </main>
@@ -16,6 +18,7 @@
 <script>
 import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
+import Hero from './components/Hero.vue'
 import dcIndexBar from './components/main/dcIndexBar.vue'
 
 export default {
@@ -23,7 +26,8 @@ export default {
   components: {
     Header,
     Footer,
-    dcIndexBar
+    dcIndexBar,
+    Hero
   }
 }
 </script>
