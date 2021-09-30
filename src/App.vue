@@ -6,7 +6,7 @@
     <Hero/>
 
     <main>
-      <p style="color: white">--> Content Goes Here</p>
+      <currentSeries/>
     </main>
     <dcIndexBar/>
 
@@ -19,11 +19,13 @@
 import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
 import Hero from './components/Hero.vue'
+import currentSeries from './components/main/currentSeries.vue'
 import dcIndexBar from './components/main/dcIndexBar.vue'
 
 export default {
   name: 'App',
   components: {
+    currentSeries,
     Header,
     Footer,
     dcIndexBar,

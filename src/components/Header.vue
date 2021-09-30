@@ -98,6 +98,7 @@ export default {
     left: 0;
     width: 100%;
     background-color: $c-header;
+    z-index: 10;
 
     .container{
       justify-content: space-between;
