@@ -8,7 +8,7 @@
     </section>
     <section class="footer-bottom">
       <div class="container">
-        <button class="btn-type-1">Sign-Up Now!</button>
+        <button class="btn type-1">Sign-Up Now!</button>
         <ul>
           <li>Follow Us</li>
           <li><a href="#"><img src="@/assets/img/footer-facebook.png" alt=""></a></li>

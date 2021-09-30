@@ -1,7 +1,9 @@
 <template>
   <section id="currentSeries">
       <div class="container">
+
           <div class="currTitle">Current Series</div>
+
           <ul class="wrapSeries">
               <li v-for="(serie, index) in comicSeries" :key="index">
                   <div class="imgcontainer">
@@ -10,6 +12,9 @@
                   <p>{{comicSeries[index].series}}</p>
               </li>
           </ul>
+
+          <button class="btn type-2">Load More</button>
+
       </div>
   </section>
 </template>
@@ -120,6 +125,12 @@ export default {
           text-transform: uppercase;
           color: white;
           font-weight: 700;
+      }
+
+      button.type-2{
+          margin-left: 50%;
+          transform: translateX(-50%);
+          margin-top: 10px;
       }
   }
 
