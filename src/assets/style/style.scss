@@ -24,3 +24,15 @@ main{
     max-width: $container-width;
     margin: auto;
 }
+
+// Elements
+.btn-type-1{
+    padding: 10px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+    background-color: transparent;
+    border: 3px solid $c-first;
+}
