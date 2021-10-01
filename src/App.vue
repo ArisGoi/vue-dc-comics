@@ -3,9 +3,8 @@
 
     <Header/>
 
-    <Hero/>
-
     <main>
+      <Hero :imglink="require('./assets/img/jumbotron.jpg')" height="360px"/>
       <currentSeries/>
     </main>
     <dcIndexBar/>
@@ -35,8 +34,8 @@ export default {
 </script>
 
 <style lang="scss">
-@import 'assets/style/variables.scss';
-@import 'assets/style/style.scss';
+@import './assets/style/variables.scss';
+@import './assets/style/style.scss';
 
 #app {
   margin-top: $header-height;
