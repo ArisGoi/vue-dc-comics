@@ -1,10 +1,11 @@
 <template>
-  <section id="hero"></section>
+  <section id="hero" :style="`background-image: url(${imglink}); height:${height}`"></section>
 </template>
 
 <script>
 export default {
   name: 'Hero',
+  props:['imglink', 'height']
 }
 </script>
 
@@ -13,9 +14,7 @@ export default {
 @import '../assets/style/style.scss';
 
   #hero{
-      height: $heroHeight;
       position: relative;
-      background-image: $heroBackgroundImg;
       background-size: cover;
   }
 </style>
