@@ -97,12 +97,14 @@ export default {
       align-items: flex-start;
       flex-direction: column;
       justify-content: flex-start;
+      align-content: flex-start;
       flex-wrap: wrap;
     }
 
     ul{
       list-style: none;
       margin-top: 20px;
+      margin-right: 60px;
 
       li{
         font-size: 1.2rem;
@@ -112,7 +114,7 @@ export default {
           text-transform: uppercase;
           font-size: 1.55rem;
           font-weight: 700;
-          margin-bottom: .625rem;
+          margin-bottom: .225rem;
           color: white;
         }
       }
